@@ -1,0 +1,9 @@
+# robots.txt — tells search engine bots what they can and can't crawl
+# More info: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+User-agent: *
+Allow: /
+
+# Tell Google where your sitemap is
+# Replace with your actual URL
+Sitemap: https://yourusername.github.io/myvlog/sitemap.xml

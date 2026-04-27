@@ -1,0 +1,11 @@
+# Netlify Redirects
+# Redirect old URLs or handle 404s
+
+# If someone visits /blog they get redirected to /pages/blog.html
+/blog           /pages/blog.html        301
+/about          /pages/about.html       301
+/gallery        /pages/gallery.html     301
+/contact        /pages/contact.html     301
+
+# Custom 404 page (create pages/404.html if you want a custom one)
+# /* /pages/404.html  404

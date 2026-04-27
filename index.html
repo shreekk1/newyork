@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My World — Nepal to New York | A Personal Vlog</title>
+  <meta name="description" content="A personal vlog journey from Nepal to New York City. Stories of roots, love, adventure, nature, and culture." />
+  <meta name="keywords" content="Nepal, New York, vlog, travel, culture, adventure, personal blog" />
+  <meta name="author" content="My World" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta property="og:title" content="My World — Nepal to New York" />
+  <meta property="og:description" content="A life lived in colour, love and curiosity." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✦</text></svg>" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">My <span>World</span></a>
+  <div class="nav-mid">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/gallery.html">Gallery</a></li>
+      <li><a href="pages/blog.html">Stories</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Choose color theme">
+      <button class="theme-btn" id="btnLight" aria-label="Light mode" title="Light mode">☀️</button>
+      <button class="theme-btn active" id="btnDark" aria-label="Dark mode" title="Dark mode">🌙</button>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="drawer" hidden role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/gallery.html">Gallery</a>
+  <a href="pages/blog.html">Stories</a>
+  <a href="pages/contact.html">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <p class="eyebrow">✦ A Personal Journal</p>
+      <h1 id="hero-heading" class="hero-h1">
+        Living<br><em>Colorfully,</em><br><strong>Loving</strong> Deeply
+      </h1>
+      <p class="hero-sub">
+        From the vibrant streets of Nepal to the towering skyline of New York —
+        a story of roots, adventure, love, and all the beautiful moments in between.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">🇳🇵 Nepal</span>
+        <span class="tag">🗽 New York</span>
+        <span class="tag">💛 Love</span>
+        <span class="tag">🌿 Nature</span>
+        <span class="tag">✨ Life</span>
+      </div>
+      <div class="hero-cta">
+        <a href="pages/gallery.html" class="btn-primary">Explore Gallery</a>
+        <a href="pages/about.html" class="btn-secondary">My Story</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Put your hero photo in /images/hero.jpg -->
+      <img src="images/hero.jpg"
+           alt="Standing in a golden sunflower field in a white dress"
+           loading="eager" fetchpriority="high" width="800" height="1000"
+           onerror="this.parentElement.classList.add('img-fallback');this.remove();" />
+    </div>
+  </section>
+
+  <!-- CHAPTERS -->
+  <section class="chapters" aria-labelledby="chapters-heading">
+    <div class="section-header reveal">
+      <p class="lbl">Explore</p>
+      <h2 id="chapters-heading" class="sec-h">Chapters of <em>My World</em></h2>
+    </div>
+    <div class="chapters-grid">
+
+      <article class="chapter-card reveal">
+        <div class="card-img">
+          <img src="images/chapter-roots.jpg" alt="Holi festival Nepal" loading="lazy" width="600" height="400" onerror="this.remove()" />
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Chapter 01</span>
+          <h3>Roots — Nepal</h3>
+          <p>Where every story begins. Mountains, festivals, and the colours of home.</p>
+          <a href="pages/blog.html#roots" class="card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="chapter-card reveal d1">
+        <div class="card-img">
+          <img src="images/chapter-love.jpg" alt="Couple at Lake George" loading="lazy" width="600" height="400" onerror="this.remove()" />
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Chapter 02</span>
+          <h3>Love &amp; Adventure</h3>
+          <p>Finding someone to see the world with — every lake, every landmark.</p>
+          <a href="pages/blog.html#love" class="card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="chapter-card reveal d2">
+        <div class="card-img">
+          <img src="images/chapter-nyc.jpg" alt="Times Square New York" loading="lazy" width="600" height="400" onerror="this.remove()" />
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Chapter 03</span>
+          <h3>New York City</h3>
+          <p>The city that chose me. Skylines, streets, and stories that changed everything.</p>
+          <a href="pages/blog.html#nyc" class="card-link">Read more →</a>
+        </div>
+      </article>
+
+      <article class="chapter-card reveal d3">
+        <div class="card-img">
+          <img src="images/chapter-nature.jpg" alt="Hudson Highlands hiking" loading="lazy" width="600" height="400" onerror="this.remove()" />
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Chapter 04</span>
+          <h3>Wild Adventures</h3>
+          <p>Trails, sunflower fields, cherry blossoms, and breath-stopping sunsets.</p>
+          <a href="pages/blog.html#nature" class="card-link">Read more →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PHOTO STRIP -->
+  <section class="strip" aria-label="Photo highlights from the journey">
+    <p class="strip-ttl">✦ Moments from the journey ✦</p>
+    <div class="strip-inner" role="list" tabindex="0" aria-label="Scroll to see more photos">
+      <!-- Add your photos here — all go in /images/ folder -->
+      <div class="strip-item" role="listitem"><img src="images/strip-1.jpg" alt="Holi Nepal" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-2.jpg" alt="Lake George" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-3.jpg" alt="Times Square" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-4.jpg" alt="Sunflower fields" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-5.jpg" alt="Cherry blossoms" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-6.jpg" alt="DUMBO Brooklyn" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-7.jpg" alt="Nepal garden" loading="lazy" width="225" height="305" /></div>
+      <div class="strip-item" role="listitem"><img src="images/strip-8.jpg" alt="Beach day" loading="lazy" width="225" height="305" /></div>
+    </div>
+  </section>
+
+  <!-- LATEST STORIES -->
+  <section class="latest" aria-labelledby="latest-heading">
+    <div class="section-header reveal">
+      <p class="lbl">Fresh from the journal</p>
+      <h2 id="latest-heading" class="sec-h">Latest <em>Stories</em></h2>
+    </div>
+    <div class="stories-grid">
+
+      <article class="story-card reveal">
+        <div class="story-img">
+          <img src="images/story-1.jpg" alt="Holi colours Nepal" loading="lazy" width="600" height="350" onerror="this.remove()" />
+          <span class="story-category">Culture</span>
+        </div>
+        <div class="story-body">
+          <time class="story-date" datetime="2024-03-15">March 15, 2024</time>
+          <h3><a href="pages/blog.html#holi">The Joy of Holi — Colour, Freedom &amp; Pure Joy</a></h3>
+          <p>Lying in the grass of Nepal, covered in blue and green and pink…</p>
+        </div>
+      </article>
+
+      <article class="story-card reveal d1">
+        <div class="story-img">
+          <img src="images/story-2.jpg" alt="Lake George summer" loading="lazy" width="600" height="350" onerror="this.remove()" />
+          <span class="story-category">Adventure</span>
+        </div>
+        <div class="story-body">
+          <time class="story-date" datetime="2024-07-20">July 20, 2024</time>
+          <h3><a href="pages/blog.html#lake-george">Lake George — Blue Water &amp; Mountain Silhouettes</a></h3>
+          <p>Clear blue water, mountain silhouettes, and nowhere else to be…</p>
+        </div>
+      </article>
+
+      <article class="story-card reveal d2">
+        <div class="story-img">
+          <img src="images/story-3.jpg" alt="Cherry blossoms New York" loading="lazy" width="600" height="350" onerror="this.remove()" />
+          <span class="story-category">New York</span>
+        </div>
+        <div class="story-body">
+          <time class="story-date" datetime="2024-04-05">April 5, 2024</time>
+          <h3><a href="pages/blog.html#cherry">Spring in the City — Cherry Blossom Season</a></h3>
+          <p>Petals drifting down like slow snow, everything soft and fleeting…</p>
+        </div>
+      </article>
+
+    </div>
+    <div class="section-cta">
+      <a href="pages/blog.html" class="btn-primary">Read All Stories</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">My <em>World</em></a>
+      <p>Nepal → New York → Everywhere in between</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <p class="footer-nav-title">Pages</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/gallery.html">Gallery</a></li>
+        <li><a href="pages/blog.html">Stories</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-social" aria-label="Social media">
+      <p class="footer-nav-title">Connect</p>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter ↗</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> My World · A life lived in colour, love &amp; curiosity ✦</p>
+    <a href="pages/privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<!-- JS at bottom of body — loads after HTML is rendered -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

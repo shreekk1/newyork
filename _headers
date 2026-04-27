@@ -1,0 +1,23 @@
+/*
+  # Security Headers — applied to every page
+  # These protect against common web attacks
+
+  # Prevent browsers from guessing file types (protects against MIME sniffing attacks)
+  X-Content-Type-Options: nosniff
+
+  # Block pages from being put in iframes (prevents clickjacking)
+  X-Frame-Options: SAMEORIGIN
+
+  # Enable browser's built-in XSS protection
+  X-XSS-Protection: 1; mode=block
+
+  # Control how much referrer info is sent when clicking links
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Restrict what browser features this site can use
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+  # Content Security Policy — only allow resources from trusted sources
+  # Allows: self, Google Fonts, Formspree (for contact form)
+  # IMPORTANT: If you add other scripts/images/fonts, add their domains here
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io; frame-ancestors 'none';
