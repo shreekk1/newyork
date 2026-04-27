@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — My World Vlog</title>
+  <meta name="description" content="Get in touch with My World vlog. Send a message, collaboration inquiry, or just say hello." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✦</text></svg>" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo">My <span>World</span></a>
+  <div class="nav-mid">
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Stories</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Choose color theme">
+      <button class="theme-btn" id="btnLight" aria-label="Light mode" title="Light mode">☀️</button>
+      <button class="theme-btn active" id="btnDark" aria-label="Dark mode" title="Dark mode">🌙</button>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="drawer" hidden role="dialog" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Stories</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main id="main">
+
+  <header class="page-header">
+    <p class="lbl">Get in touch</p>
+    <h1 class="sec-h">Say <em>Hello</em></h1>
+    <p>Whether you want to collaborate, share a story, or simply connect — I'd love to hear from you.</p>
+  </header>
+
+  <section class="contact-section" aria-labelledby="contact-form-heading">
+    <div class="contact-grid">
+
+      <!-- Left: contact info -->
+      <div class="contact-info">
+        <p class="lbl">Contact details</p>
+        <h2 id="contact-form-heading" class="sec-h">Let's <em>Connect</em></h2>
+        <p class="sec-p">Have a story idea, collab request, or just want to say hi? Fill in the form and I'll get back to you.</p>
+
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">📍</span>
+          <div class="contact-detail-text">
+            <h4>Location</h4>
+            <p>New York City, USA</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">📸</span>
+          <div class="contact-detail-text">
+            <h4>Instagram</h4>
+            <!-- Replace with your real username -->
+            <p><a href="#" target="_blank" rel="noopener noreferrer">@yourusername ↗</a></p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">🎬</span>
+          <div class="contact-detail-text">
+            <h4>YouTube</h4>
+            <p><a href="#" target="_blank" rel="noopener noreferrer">My World Channel ↗</a></p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">✉️</span>
+          <div class="contact-detail-text">
+            <h4>Response time</h4>
+            <p>Usually within 48 hours</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: contact form -->
+      <div class="contact-form" role="region" aria-label="Contact form">
+
+        <!--
+          HOW TO MAKE THIS FORM WORK:
+          ─────────────────────────────────────────────────────
+          FREE OPTION — Formspree (recommended, no backend needed):
+            1. Go to https://formspree.io → Sign up free
+            2. Click "New Form" → copy your form ID (e.g. xpzgwqkr)
+            3. In js/main.js, find the fetch() call and replace
+               'https://formspree.io/f/YOUR_FORM_ID'
+               with your actual ID, e.g.:
+               'https://formspree.io/f/xpzgwqkr'
+            4. Done — Formspree emails you every submission.
+
+          NETLIFY OPTION (if hosting on Netlify):
+            1. Add data-netlify="true" to the <form> below
+            2. Netlify catches submissions automatically — no JS needed.
+          ─────────────────────────────────────────────────────
+        -->
+
+        <form
+          id="contactForm"
+          novalidate
+          aria-label="Send a message"
+        >
+
+          <!-- Honeypot field — hidden from humans, traps bots -->
+          <!-- DO NOT REMOVE THIS — it's a spam protection field -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Leave this empty</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <!-- Name + Email row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                maxlength="100"
+                autocomplete="name"
+                placeholder="Jane Smith"
+                aria-required="true"
+                aria-describedby="nameError"
+              />
+              <span class="field-error" id="nameError" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                maxlength="200"
+                autocomplete="email"
+                placeholder="jane@example.com"
+                aria-required="true"
+                aria-describedby="emailError"
+              />
+              <span class="field-error" id="emailError" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label for="subject">Subject <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              maxlength="200"
+              placeholder="What's this about?"
+              aria-required="true"
+              aria-describedby="subjectError"
+            />
+            <span class="field-error" id="subjectError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              minlength="10"
+              maxlength="2000"
+              placeholder="Tell me what's on your mind…"
+              aria-required="true"
+              aria-describedby="messageError messageCount"
+            ></textarea>
+            <span class="field-error" id="messageError" role="alert" aria-live="polite"></span>
+            <span id="messageCount" style="font-size:11px;color:var(--txt-3);display:block;margin-top:4px;">0 / 2000</span>
+          </div>
+
+          <!-- Submit row -->
+          <div class="form-footer">
+            <p class="form-note">
+              * Required fields. Your data is never shared or sold.
+            </p>
+            <button
+              type="submit"
+              class="btn-primary"
+              id="submitBtn"
+              aria-label="Send your message"
+            >
+              Send Message
+            </button>
+          </div>
+
+          <!-- Success / error feedback -->
+          <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">My <em>World</em></a>
+      <p>Nepal → New York → Everywhere in between</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <p class="footer-nav-title">Pages</p>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-social" aria-label="Social media">
+      <p class="footer-nav-title">Connect</p>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter ↗</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> My World · A life lived in colour, love &amp; curiosity ✦</p>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Character counter for textarea
+  var messageEl = document.getElementById('message');
+  var countEl   = document.getElementById('messageCount');
+  if (messageEl && countEl) {
+    messageEl.addEventListener('input', function () {
+      countEl.textContent = messageEl.value.length + ' / 2000';
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — My World Vlog</title>
+  <meta name="description" content="Photo gallery from My World — Nepal, New York, adventures, culture, and love." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✦</text></svg>" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo">My <span>World</span></a>
+  <div class="nav-mid">
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+      <li><a href="blog.html">Stories</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Choose color theme">
+      <button class="theme-btn" id="btnLight" aria-label="Light mode" title="Light mode">☀️</button>
+      <button class="theme-btn active" id="btnDark" aria-label="Dark mode" title="Dark mode">🌙</button>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div id="mobileMenu" class="drawer" hidden role="dialog" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Stories</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main id="main">
+
+  <header class="page-header">
+    <p class="lbl">Visual stories</p>
+    <h1 class="sec-h">The <em>Gallery</em></h1>
+    <p>Every photo is a moment captured — from Himalayan festivals to New York skylines.</p>
+  </header>
+
+  <section class="gallery-section" aria-labelledby="gallery-heading">
+
+    <h2 id="gallery-heading" class="sr-only">Photo gallery</h2>
+
+    <!-- Filter buttons -->
+    <div class="gallery-filter" role="group" aria-label="Filter photos by category">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="nepal" aria-pressed="false">Nepal</button>
+      <button class="filter-btn" data-filter="nyc" aria-pressed="false">New York</button>
+      <button class="filter-btn" data-filter="nature" aria-pressed="false">Nature</button>
+      <button class="filter-btn" data-filter="love" aria-pressed="false">Love</button>
+      <button class="filter-btn" data-filter="culture" aria-pressed="false">Culture</button>
+    </div>
+
+    <!-- Gallery grid — masonry layout via CSS columns -->
+    <!--
+      HOW TO ADD YOUR PHOTOS:
+      1. Put your photo in /images/ folder
+      2. Copy one <div class="gallery-item"> block
+      3. Update src, alt, and data-category (nepal / nyc / nature / love / culture)
+    -->
+    <div class="gallery-grid" role="list" aria-label="Photo gallery">
+
+      <div class="gallery-item reveal" data-category="nepal" role="listitem">
+        <img src="../images/gallery-1.jpg" alt="Holi festival — lying in the grass covered in vibrant colours" loading="lazy" width="600" height="400" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d1" data-category="love" role="listitem">
+        <img src="../images/gallery-2.jpg" alt="Couple at Lake George, New York" loading="lazy" width="600" height="800" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d2" data-category="nyc" role="listitem">
+        <img src="../images/gallery-3.jpg" alt="Times Square at dusk" loading="lazy" width="600" height="450" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="nature" role="listitem">
+        <img src="../images/gallery-4.jpg" alt="Sunflower fields in white dress" loading="lazy" width="600" height="750" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d1" data-category="nyc" role="listitem">
+        <img src="../images/gallery-5.jpg" alt="Top of the Rock — New York City skyline" loading="lazy" width="600" height="400" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d2" data-category="nature" role="listitem">
+        <img src="../images/gallery-6.jpg" alt="Cherry blossom season in spring" loading="lazy" width="600" height="450" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="love" role="listitem">
+        <img src="../images/gallery-7.jpg" alt="Cozy evening out together" loading="lazy" width="600" height="500" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d1" data-category="culture" role="listitem">
+        <img src="../images/gallery-8.jpg" alt="Traditional pink kurta at a celebration" loading="lazy" width="600" height="800" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d2" data-category="nyc" role="listitem">
+        <img src="../images/gallery-9.jpg" alt="DUMBO Brooklyn with Manhattan Bridge" loading="lazy" width="600" height="450" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="nature" role="listitem">
+        <img src="../images/gallery-10.jpg" alt="Hudson Highlands State Park eagle sign" loading="lazy" width="600" height="750" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d1" data-category="love" role="listitem">
+        <img src="../images/gallery-11.jpg" alt="Nepal garden in winter sweaters" loading="lazy" width="600" height="500" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+      <div class="gallery-item reveal d2" data-category="nyc" role="listitem">
+        <img src="../images/gallery-12.jpg" alt="Statue of Liberty on Liberty Island" loading="lazy" width="600" height="750" />
+        <div class="gallery-item-overlay" aria-hidden="true"><span>🔍</span></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LIGHTBOX (click any photo to open) -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+  </div>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">My <em>World</em></a>
+      <p>Nepal → New York → Everywhere in between</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <p class="footer-nav-title">Pages</p>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-social" aria-label="Social media">
+      <p class="footer-nav-title">Connect</p>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter ↗</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> My World · A life lived in colour, love &amp; curiosity ✦</p>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Update aria-pressed on filter buttons for accessibility
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b) {
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.setAttribute('aria-pressed', 'true');
+    });
+  });
+</script>
+
+</body>
+</html>

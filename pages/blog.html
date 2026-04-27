@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stories — My World Vlog | Nepal to New York</title>
+  <meta name="description" content="Personal stories from My World — Holi in Nepal, adventures in New York, love, nature, and everything in between." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>✦</text></svg>" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo">My <span>World</span></a>
+  <div class="nav-mid">
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html" class="active" aria-current="page">Stories</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Choose color theme">
+      <button class="theme-btn" id="btnLight" aria-label="Light mode" title="Light mode">☀️</button>
+      <button class="theme-btn active" id="btnDark" aria-label="Dark mode" title="Dark mode">🌙</button>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div id="mobileMenu" class="drawer" hidden role="dialog" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Stories</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <p class="lbl">From the journal</p>
+    <h1 class="sec-h">My <em>Stories</em></h1>
+    <p>Every adventure, every feeling, every moment worth remembering — written down.</p>
+  </header>
+
+  <!-- BLOG CONTENT -->
+  <section class="blog-section" aria-labelledby="stories-heading">
+    <h2 id="stories-heading" class="sr-only">All stories</h2>
+
+    <div class="blog-grid">
+
+      <!-- ── MAIN POSTS ── -->
+      <div class="blog-posts">
+
+        <!-- Post 1: Holi -->
+        <article class="blog-post reveal" id="holi">
+          <div class="blog-post-img">
+            <img src="../images/story-holi.jpg"
+                 alt="Lying in the grass covered in Holi colours"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">Culture · Nepal</span>
+            <h3 class="post-title">
+              <a href="#holi">The Joy of Holi — Colour, Freedom &amp; Pure Joy</a>
+            </h3>
+            <p class="post-excerpt">
+              Lying in the grass of Nepal, covered in blue and green and pink, smiling at the sky —
+              that is what it means to be free. Holi isn't just a festival of colours.
+              It's the feeling of pure, uninhibited joy that you carry long after the powder washes off.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-03-15">March 15, 2024</time>
+              <span class="read-more" aria-hidden="true">5 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2: Lake George -->
+        <article class="blog-post reveal d1" id="lake-george">
+          <div class="blog-post-img">
+            <img src="../images/story-lake.jpg"
+                 alt="Couple sitting at Lake George watching the mountains"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">Adventure · New York</span>
+            <h3 class="post-title">
+              <a href="#lake-george">Lake George — Blue Water, Mountain Silhouettes &amp; Nowhere Else to Be</a>
+            </h3>
+            <p class="post-excerpt">
+              Lake George on a summer afternoon — clear blue water, mountain silhouettes, and
+              that rare feeling of being exactly where you're supposed to be.
+              Some places don't need words. They just need presence.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-07-20">July 20, 2024</time>
+              <span class="read-more" aria-hidden="true">4 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3: Cherry Blossoms -->
+        <article class="blog-post reveal d2" id="cherry">
+          <div class="blog-post-img">
+            <img src="../images/story-cherry.jpg"
+                 alt="Cherry blossom tree in bloom with New York skyline"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">Nature · New York</span>
+            <h3 class="post-title">
+              <a href="#cherry">Spring in the City — Cherry Blossom Season, Petals &amp; Pink Sky</a>
+            </h3>
+            <p class="post-excerpt">
+              Spring arrives in pink. Petals drifting down like slow snow, everything soft,
+              fleeting, and breathtaking. Cherry blossom season in New York is short —
+              maybe two weeks — but those two weeks feel like magic.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-04-05">April 5, 2024</time>
+              <span class="read-more" aria-hidden="true">3 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 4: Roots -->
+        <article class="blog-post reveal" id="roots">
+          <div class="blog-post-img">
+            <img src="../images/story-roots.jpg"
+                 alt="Nepal mountains and green terraced gardens"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">Culture · Nepal</span>
+            <h3 class="post-title">
+              <a href="#roots">Where It All Begins — Nepal, Home &amp; Everything That Shaped Me</a>
+            </h3>
+            <p class="post-excerpt">
+              Home is not just a place. It's the feeling of colour on your skin,
+              laughter in the grass, and a sky that feels like it belongs only to you.
+              No matter how far I go, Nepal is always with me.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-01-10">January 10, 2024</time>
+              <span class="read-more" aria-hidden="true">6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 5: Love -->
+        <article class="blog-post reveal d1" id="love">
+          <div class="blog-post-img">
+            <img src="../images/story-love.jpg"
+                 alt="Two people looking at the horizon together"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">Love · Adventure</span>
+            <h3 class="post-title">
+              <a href="#love">Finding Someone to See the World With</a>
+            </h3>
+            <p class="post-excerpt">
+              The best kind of love is the one that takes you places — both on the map and within yourself.
+              Every lake, every landmark, every quiet moment by the water becomes
+              a memory you carry forever when you share it with the right person.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-06-14">June 14, 2024</time>
+              <span class="read-more" aria-hidden="true">4 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 6: Hudson Highlands -->
+        <article class="blog-post reveal d2" id="nature">
+          <div class="blog-post-img">
+            <img src="../images/story-hudson.jpg"
+                 alt="Hudson Highlands State Park trailhead with eagle sign"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">Nature · New York</span>
+            <h3 class="post-title">
+              <a href="#nature">Hudson Highlands — Trails, Eagles &amp; Wild Open Sky</a>
+            </h3>
+            <p class="post-excerpt">
+              The trailhead greeted me with a giant wooden eagle and the promise of forest trails.
+              This hike felt like reclaiming something wild — the need to move, breathe,
+              and exist under open sky without a screen in sight.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-08-03">August 3, 2024</time>
+              <span class="read-more" aria-hidden="true">5 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 7: NYC Chapter -->
+        <article class="blog-post reveal" id="nyc">
+          <div class="blog-post-img">
+            <img src="../images/story-nyc.jpg"
+                 alt="New York City skyline from Top of the Rock"
+                 loading="lazy" width="280" height="200"
+                 onerror="this.remove()" />
+          </div>
+          <div class="blog-post-body">
+            <span class="post-category">New York</span>
+            <h3 class="post-title">
+              <a href="#nyc">The City That Chose Me — My New York Story</a>
+            </h3>
+            <p class="post-excerpt">
+              New York doesn't just welcome you — it dares you. It dares you to dream bigger,
+              walk faster, look up more often. From the neon pulse of Times Square to
+              the quiet reverence at the Top of the Rock, this city became a second home.
+            </p>
+            <div class="post-meta">
+              <time class="post-date" datetime="2024-02-20">February 20, 2024</time>
+              <span class="read-more" aria-hidden="true">7 min read</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- end .blog-posts -->
+
+      <!-- ── SIDEBAR ── -->
+      <aside class="blog-sidebar" aria-label="Blog sidebar">
+
+        <!-- Categories widget -->
+        <div class="sidebar-widget reveal">
+          <h3 class="sidebar-title">Browse by Category</h3>
+          <ul class="category-list">
+            <li>
+              <a href="#" data-filter-category="culture">
+                Culture &amp; Nepal <span>3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter-category="nyc">
+                New York City <span>3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter-category="nature">
+                Nature &amp; Adventures <span>2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter-category="love">
+                Love &amp; People <span>2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- About widget -->
+        <div class="sidebar-widget reveal d1">
+          <h3 class="sidebar-title">About This Blog</h3>
+          <p style="font-size:13.5px;line-height:1.8;color:var(--txt-3);font-weight:300;margin-bottom:16px;transition:color .4s">
+            A personal journal bridging Nepal and New York.
+            Stories of roots, love, adventure, culture, and all the beautiful moments in between.
+          </p>
+          <a href="about.html" class="btn-primary" style="font-size:11px;padding:10px 22px;">Learn More</a>
+        </div>
+
+        <!-- Connect widget -->
+        <div class="sidebar-widget reveal d2">
+          <h3 class="sidebar-title">Connect</h3>
+          <ul class="category-list">
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube ↗</a></li>
+            <li><a href="contact.html">Send a message →</a></li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div><!-- end .blog-grid -->
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">My <em>World</em></a>
+      <p>Nepal → New York → Everywhere in between</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <p class="footer-nav-title">Pages</p>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-social" aria-label="Social media">
+      <p class="footer-nav-title">Connect</p>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter ↗</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> My World · A life lived in colour, love &amp; curiosity ✦</p>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
